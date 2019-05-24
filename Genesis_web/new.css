@@ -1,4 +1,4 @@
-
+@import url(font-awesome.min.css);
 h1 {
     font-family: lato;
     text-align: center;
@@ -233,6 +233,19 @@ a{
     text-align: left;
 }
 
+.icon:before {
+    /*-moz-osx-font-smoothing: grayscale;*/
+    /*-webkit-font-smoothing: antialiased;*/
+    font-family: FontAwesome;
+    /*font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;*/
+    box-sizing: border-box;
+}
+
+/*ul.icons li .icon:before {
+    font-size: 2em;
+}*/
 /**footer**/
 footer{
     text-align: center;
