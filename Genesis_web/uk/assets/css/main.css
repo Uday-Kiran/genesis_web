@@ -2914,7 +2914,7 @@
 				}
 
 					#header.alt nav a:active, #header.alt nav a:hover {
-						color: #FFF;
+						color: rgb(143, 9, 143);
 					}
 
 			#header.alt .button {
@@ -3097,7 +3097,7 @@
 	}
 
 	#banner {
-		padding: 16em 0 13em 0;
+		padding: 10em 0 15em 0;
 		background-attachment: fixed;
 		/*background-image:  url("images/Pyhton.png"); url("../../images/banner.jpg")*/
 		/*background-image: url("images/Pyhton.png");/*url("images/overlay.png"),*/*/

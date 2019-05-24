@@ -30,7 +30,7 @@ a{
     margin: 0.5rem;
     margin-left: 3rem;
     align-content: center;
-    background-image: url('/Images/Green.png');
+    background-image: url('Images/Green.png');
     background-repeat: no-repeat;
     background-size: 20%;
 
@@ -123,7 +123,7 @@ a{
 /** Image Container **/
 .second{
     background-color: antiquewhite;
-    background-image: url('/Images/Main.jpg');
+    background-image: url('Images/Main.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 30%
@@ -152,7 +152,7 @@ a{
     background-color: rgb(255, 255, 255);
     padding-top: 100%;
     text-align: center;
-    background-image: url('/Images/Python.png');
+    background-image: url('Images/Python.png');
     background-size: 115%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -169,7 +169,7 @@ a{
     background-color: rgb(255, 250, 230);
     padding-top: 100%;
     text-align: center;
-    background-image: url('/Images/Fullstack.png');
+    background-image: url('Images/Fullstack.png');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: 30% 30%;
@@ -185,7 +185,7 @@ a{
     background-color: rgb(255, 255, 255);
     padding-top: 100%;
     text-align: center;
-    background-image: url('/Images/AI_2.png');
+    background-image: url('Images/AI_2.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 60% 40%;
