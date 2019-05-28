@@ -6,13 +6,15 @@ h1 {
 }
 
 .wrapper{
-    display: grid;
+    /*display: grid;*/
     margin-left: 1rem;
     padding: 0px;
     margin-bottom: 0px;
-    grid-template-columns: 35% 65%;
-    grid-template-areas: 
-        'logo nav nav nav';
+    /*grid-template-columns: 35% 65%;*/
+    /*grid-template-areas: */
+        /*'logo nav';*/
+    position: relative;
+    height: 170px;
 }
 a{
     text-decoration: none;
@@ -26,15 +28,17 @@ a{
 
 .logo{
     grid-area: logo;
-    padding-left: 1em;
+    /*padding-left: 1em;
     padding: 2.5em;
     margin: 0.5rem;
-    margin-left: 3rem;
+    margin-left: 3rem;*/
     align-content: center;
     background-image: url('Images/Green.png');
     background-repeat: no-repeat;
-    background-size: 20%;
-
+    background-size: 100%;
+    float: left;
+    height: 170px;
+    width: 190px;
 }
 
 /**.logo h1{
@@ -47,15 +51,16 @@ a{
 .navigation{
     grid-area: nav;
     padding-top: 1.5em;
-    
+    float: left;
 }
 
 .navigation ul {
-    
+    padding-left: 150px;
+    font-size: 30pt;
     display: grid;
     grid-gap: 1pc;
     list-style: none;
-    grid-template-columns: repeat(6, 6rem);
+    grid-template-columns: repeat(3, 15rem);
     justify-content: left;
     font-family: lato;
     
@@ -136,6 +141,7 @@ a{
     margin-top: 0px;
     margin-right: 100px;
     margin-left: 135px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     
@@ -162,16 +168,6 @@ a{
 
 }
 
-.Python:hover, .fullstack:hover, .ai:hover{
-    transform: scale(1.05);
-}
-
-.Python h2{
-    background-color: white;
-    padding: 1.5px;
-    opacity: .7;
-}
-
 .fullstack{
     grid-area: fullstack;
     background-color: rgb(255, 250, 230);
@@ -183,11 +179,6 @@ a{
     background-position: 30% 30%;
     box-shadow: 1px 5px 10px;
     transition: transform .2s;
-}
-.fullstack h2{
-    background-color: white;
-    padding: 1.5px;
-    opacity: .7;
 }
 
 .ai{
@@ -203,7 +194,11 @@ a{
     transition: transform .2s;
 }
 
-.ai h2{
+.Python:hover, .fullstack:hover, .ai:hover{
+    transform: scale(1.05);
+}
+
+.Python h2 , .fullstack h2 , .ai h2{
     background-color: white;
     padding: 1.5px;
     opacity: .7;
@@ -215,13 +210,16 @@ a{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
     margin-top: 0em;
-    margin-left: 0em;
+    margin-left: 8em;
     margin-right: 0rem;
     width: 85%;
     background-color: rgb(238, 238, 238);
-    padding: 5px 10px 5px 110px;
+    padding: 5px 10px 5px 0px;
 }
 
+#map-tile{
+    margin: 10px;
+}
 .address{
     font-family: Montserrat;
     font-size: 10pt;
@@ -255,34 +253,90 @@ a{
 
 /* Icon */
 
-    .icon {
-        text-decoration: none;
-        border-bottom: none;
-        position: relative;
-    }
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
 
-        .icon:before {
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-transform: none !important;
-        }
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
 
-        .icon > .label {
-            display: none;
-        }
-
+.icon > .label {
+    display: none;
+}
 
 /*ul.icons li .icon:before {
     font-size: 2em;
 }*/
 /**footer**/
 footer{
-    text-align: center;
+    text-align: left;
     font-family: Montserrat;
-    font-size: 8pt;
+    /*font-size: 8pt;*/
 }
 
 
+@media(max-width: 450px){
+    .wrapper{
+        position: relative;
+        height: 100px;
+        margin: 0;
+    }
+    .logo{
+        width: 25%;
+        height: 100px;
+        background-size: 95%;
+        margin-left: 0;
+        float: left;
+    }
+    .navigation{
+        width: 75%;
+        float: left;
+    }
+    .navigation ul{
+        /*grid-template-columns: repeat(6, 5rem);*/
+        padding-left: 10px;
+        grid-template-columns: repeat(3, 6rem);
+        font-size: 15pt;
+        grid-gap: 0;
+    }
+    .landing_page{
+        margin: 10px;
+        grid-template-rows: 85% 50%;
+        width: 100%;
+    }
+    .one p{
+        padding: 5px;
+        font-size: 10pt;
+    }
+    .one h1{
+        margin: 0;
+        font-size: 20pt;
+    }
+    .subject{
+        margin: 20px;
+        width: 100%;
+    }
+    .Python{
+        height: 28%;
+        background-size: 275%;
+        background-position: 46% ;
+
+    }
+    .contact{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+        width:109%;
+        margin-left: 10px;
+    }
+    iframe{
+        width: 100%;
+    }
+}
